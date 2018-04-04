@@ -4,11 +4,19 @@ Hermes is an open source project that aims to collect all relevant IOT data avai
 
 # Installation
 
-Installing arduino:   
-`sudo apt-get update && sudo apt-get install arduino arduino-core`
+Install from here: https://www.arduino.cc/en/Guide/Linux/#toc2
+
+make sure your arduino version is > 1.6.0!!!
+
+
 
 
 On Ubuntu `~/sketchbook/libraries` is where you should put your custom libraries
+
+Update the firmata examples by downloading the zip at https://github.com/firmata/arduino and pasting it inside your sketchbook
+
+
+
 
 # Usage
 
