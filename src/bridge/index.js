@@ -12,14 +12,14 @@ module.exports = (localDevices , remote) =>{
 
     remoteDevices.forEach(remoteDevice => {
       //Finding match with localDevice
-      const matchIndex = _.findIndex(localDevices, ld => ld.getID()+'' == remoteDevice.getID()+'')
+      const matchIndex = _.findIndex(localDevices, ld => ld.getID().toString() == remoteDevice.getID().toString())
 
       if(matchIndex > -1){
         console.log(`  + Found a match for ${remoteDevice.getID()} - ${remoteDevice.getAlias()}`)
         localDevices[matchIndex].setRemoteDevice(remoteDevice)
       }
     });
-    
+
     return localDevices;
   })
 }
