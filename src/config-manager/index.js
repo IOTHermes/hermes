@@ -25,7 +25,7 @@ module.exports = (path = '../../config') => {
 
     if(!remotesConfig){
       configs.remotes = []
-      console.warn('WARNING: Hey! Could not find any remotes.json. Ignoring remotes!')
+      console.warn('WARNING: Hey! Could not find any remote.json. Ignoring remotes!')
       resolve(configs)
     } else {
       loadRemote(remotesConfig).then(remote => {
