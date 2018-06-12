@@ -17,10 +17,12 @@ class FileLoader{
       deps.base64.encode(path, (err, base64) => {
         if(this.onDataCb){
           this.onDataCb({
-            path,
-            name: p.basename(path),
-            base64,
-            createdAt: stats.atime
+            infraredImage: {
+              path,
+              name: p.basename(path),
+              base64,
+              createdAt: stats.atime
+            }
           });
         }
       });
