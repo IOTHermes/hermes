@@ -20,7 +20,7 @@
     "file-base64": "^1.0.0",
     "firmata": "^0.19.1",
     "fs-extra": "^6.0.1",
-    "hermes-backend-link": "^0.1.0",
+    "hermes-backend-link": "^0.2.0",
     "htu21d-i2c": "^0.1.0",
     "johnny-five": "^0.14.1",
     "lodash": "^4.17.10",
